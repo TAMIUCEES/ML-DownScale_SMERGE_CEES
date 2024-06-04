@@ -20,52 +20,6 @@ pip install shap
 
 pip install os
 
-"""The following libraries will be imported to be able to run the code
-
-
----
-
-
-First, we have the most important library that is XGBoost, which will help to import our base model *XGBRegressor*.
-
-> See the link below for more information on the package:
-
--  XGBRegressor - https://xgboost.readthedocs.io/en/stable/python/python_api.html#xgboost.XGBRegressor
-
-
----
-
-
-
-Since we are working with XGBoost, most of the libraries used are from "sklearn package", which includes:
-
-**sklearn-metrics**
-
-
----
-
-
-- **r2_score** - Used to measure how well a linear regression model fits the data.
-> For more information visit: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.r2_score.html
-
-- **mean_squared_error** - Evaluates the closeness between the regression line and the set of data points. A lower MSE indicates that the regression line is a better fit for the data.
-> For more information visit: https://scikit-learn.org/stable/modules/generated/sklearn.metrics.mean_squared_error.html
-
----
-
-Additionally, we have SHAP and os, as explained before, SHAP is an interpretabilty tool which helps to evaluate the contribution of each feature towards predictions. Os is particularly used to concatenate path components with exactly one directory separator "/", and create one path.
-  
-> See the links below for more information in the packages:
-- **SHAP** - https://shap.readthedocs.io/en/latest/
-- **os** - https://www.geeksforgeeks.org/python-os-path-join-method/
-
-The other packages contain python features such as 'pandas' and 'numpy', which helps obtain the mean and standard deviation.
-
-> See the links below to more information in the packages:
-- **Pandas** - https://pandas.pydata.org/docs/user_guide/index.html
-- **NumPy** - https://numpy.org/doc/stable/
-"""
-
 from xgboost import XGBRegressor
 import os
 import pandas as pd
@@ -74,29 +28,9 @@ import shap
 from sklearn.metrics import r2_score
 from sklearn.metrics import mean_squared_error as mse
 
-"""- The user will then be asked to input the name of the dataset.
-
-  An example would be:
-  > *Enter the name of the dataset:* **ARM**
-"""
-
 name = input("Enter the name of the dataset: ")
 
-"""- Paths will be constructed based on the zone and name.
-
-  An example would be:
-  > *Enter the home directory where the datasets are located:* **/content/ARM_1/**
-"""
-
 home_directory = input("Enter the home directory where the datasets are located: ")
-
-"""- Input the name of the testing dataset, this will be used to construct the full path.
-
-  An example would be:
-  > *Enter the name of the testing dataset:* **ERA1_2ARM_100m_dataV1_test.csv**
-
-- While the code is running it will also be checking if the testing file exists. If the file does not exist, then the code will prompt the user until a valid file is provided.
-"""
 
 test_dataset_name = input("Enter the name of the testing dataset (including file extensions): ")
 
@@ -107,13 +41,6 @@ while not os.path.exists(test_file):
   test_dataset_name = input("Enter the name of the testing dataset (including file extensions): ")
   test_file = os.path.join(home_directory, test_dataset_name)
 
-"""- Input the name of the training dataset, this will be used to construct the full path.
-
-  An example would be:
-  > *Enter the name of the training dataset:* **ERA1_2ARM_1000m_dataV1_train.csv**
-
-- While the code is running it will also be checking if the training file exists. If the file does not exist, then the code will prompt the user until a valid file is provided.
-"""
 
 train_dataset_name = input("Enter the name of the training dataset (including file extensions): ")
 
