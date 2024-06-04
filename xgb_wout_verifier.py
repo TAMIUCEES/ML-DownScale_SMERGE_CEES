@@ -19,7 +19,6 @@ while not os.path.exists(test_file):
   test_dataset_name = input("Enter the name of the testing dataset (including file extensions): ")
   test_file = os.path.join(home_directory, test_dataset_name)
 
-
 train_dataset_name = input("Enter the name of the training dataset (including file extensions): ")
 train_file = os.path.join(home_directory, train_dataset_name)
 
@@ -27,7 +26,6 @@ while not os.path.exists(train_file):
   print("The specified training file does not exist. Enter the correct dataset name.")
   train_dataset_name = input("Enter the name of the training dataset (including file extensions): ")
   train_file = os.path.join(home_directory, train_dataset_name)
-
 
 variables_list_name = input("Enter the name of the variables list (make sure the file is in text file format): ")
 variables_file = os.path.join(home_directory, variables_list_name)
@@ -65,14 +63,11 @@ def process_object_columns(dataframe):
     # Returning the original DataFrame without object type columns
     return df_without_objects
 
-
 index_variable = input("Enter the index variable from the list of variables: ")
 test_data = process_object_columns(test_data)
-
 print(test_data)
 
 date = pd.read_csv(test_file, usecols=['Date'])
-
 
 def date_formatting(dataframe2):
     # Processing 'Date' column for testing
@@ -103,8 +98,7 @@ def date_formatting(dataframe2):
 
 test_data = date_formatting(test_data)
 
-
-# Separating target variable (dependent) from the initial variables (independent).
+# Separating the target variable (dependent) from the initial variables (independent).
 target_variable = input("Write the name of the target variable to extract it from the list of variables: ")
 variables = test_data.columns.tolist()
 
@@ -114,10 +108,7 @@ while target_variable in variables:
 y_test = test_data[target_variable]
 x_test = test_data[variables]
 
-
 train_data = pd.read_csv(train_file)
-
-
 train_data = date_formatting(train_data)
 
 #Defining x_train and y_train
@@ -128,13 +119,11 @@ x_train_nu = x_train.to_numpy()
 y_train_nu = y_train.to_numpy()
 x_test_nu = x_test.to_numpy()
 
-
 model = XGBRegressor(verbosity=1, n_estimators=500, max_depth=10, tree_method='gpu_hist')
 model.fit(x_train_nu, y_train_nu)
 
 MSE = mse(y_test, model.predict(x_test_nu))
 print("The mean squared error (MSE) on the set: {:.4f}".format(MSE))
-
 
 predictions = model.predict(x_test_nu)
 test_data['Date'] = date
@@ -143,7 +132,6 @@ test_data[index_variable] = index_variable
 
 ## Saving the output dataframe to a CSV file
 test_data.to_csv(name + ".csv", index=False)
-
 
 # Generating variable importance plots
 X_sampled = x_train.sample(1000, random_state=10, replace=True)
