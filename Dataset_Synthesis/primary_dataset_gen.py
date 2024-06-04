@@ -132,13 +132,13 @@ while not os.path.exists("dates.txt"):
 date = text_file.read().split(',')
 
 # Read the list of dates from the file
-static_file = open("static.csv", "r")
+static_file = open("static_config.txt", "r")
 
 # Checks if the file exists
-while not os.path.exists("static.csv"):
+while not os.path.exists("static_config.txt"):
   print('The static_config text was not found. It should be in the same directory as the .py script. ')
   n = input("Press enter to try again.")
-  static_file = open("static.csv", "r")
+  static_file = open("static_config.txt", "r")
 # Dates are now used as a list
 static_config = {}
 with static_file as f:
