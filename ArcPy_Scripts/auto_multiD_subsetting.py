@@ -7,10 +7,9 @@ Original file is located at
     https://colab.research.google.com/drive/1Hwkz-LlsS6AfUdB2pgug2yt-eAa2ZxCt
 
 # Introduction
-
-**explanation of what auto_multiD_subsetting is**
-The *auto_mutliD_subsetting* program, similar to *auto_zonal_stats*, allows users to get all the data and raster, faster by processing and resampling data raster by individual layers. Subsequently, the *auto_zonal_stats* inputs will be the *auto_multiD_subsetting* program outputs raster. Like *auto_zonal_stats*, the program allows the user to resample files by enabling raster file size conversion by raster layer. The program calculates the multi-dimensions by subsetting larger files. It enables efficient subset data extraction and manipulation of data. Subsequently, this tool will then create a subset of a multidimensional raster by slicing data along defined variables and dimensions, by extracting a subset of variables.
 ---
+
+Similar to *auto_zonal_stats*, the **auto_multiD_subsetting** program enables users to acquire data and raster more efficiently by processing and resampling data raster on an individual layer basis. The outputs of the *auto_multiD_subsetting* program then serve as the inputs for the *auto_zonal_stats* program. Like *auto_zonal_stats*, *auto_multiD_subsetting* allows for the file resampling, enabling raster file size conversion by raster layer. The program calculates multi-dimensions by subsetting larger files, facilitating efficient subset data extraction and manipulation. Subsequently, this tool creates a subset of a multidimensional raster by slicing data along specified variables and dimensions. It generates a multidimensional raster layer from a multidimensional raster or mosaic dataset by extracting a subset of variables.  
 
 The following libraries are imported to allow the code to be run:
 - **os** - The directory service provides the ability to create and remove directory folders, gather data, change and find the current directory, and provide a means for users and the operating system to interact with each other.
@@ -31,8 +30,8 @@ The following libraries are imported to allow the code to be run:
 
 
 ---
-> **Note:**
-- To ensure the code is tailored to the user's requirements, edit the comments so that they are included when running the script.
+**Note:**
+> - To ensure the code is tailored to the user's requirements, edit the comments so that they are included when running the script.
 """
 
 import os
@@ -131,8 +130,8 @@ arcpy.env.workspace = geodatabase_path
 - Overwriting of existing output datasets is allowed when *overwriteOutput* is set to 'True'.
 - Lastly, the program sets the default cell size for raster operations by using the cell size of the raster dataset at the specified path.
 
- > **Note:**
-  - To ensure efficient processing, the **raster must be equal to or lower than the target resolution**.
+**Note:**
+>  - To ensure efficient processing, the **raster must be equal to or lower than the target resolution**.
     - Using a target resolution that is too small can prolonged the runtime and can cause the zonal statistics to consider the cell size.
 """
 
