@@ -87,7 +87,6 @@ date = find_uncommon_elements(date, date1)
 lag = input('Enter the number of monthly lag: ')
 # Convert to integer
 lag = int(lag)
-
 # State the day offset
 offset = input('Enter the day offset: ')
 # Convert to integer
@@ -99,10 +98,8 @@ start = input('If you need to start on a different date, enter its index. If not
 start = int(start)
 # Extracts portion of a list
 date = date[start:]
-
 # Uploads text file
 d_text = input("Enter the adjusted date list text file: ")
-
 # Opens and reads the list of dates
 text_file = open(d_text, "r")
 
@@ -111,14 +108,12 @@ while not os.path.exists(d_text, "r"):
   print("The date list txt file was not found. It should be in the same directory as the '.py' script.")
   n = input("Press enter to try again.")
   text_file = open(d_text, "r")
-
 date = text_file.read().split(',')
 
 # State the monthly lag
 lag = input("Enter the number of monthly lag: ")
 # Convert to integer
 lag = int(lag)
-
 # State the day offset
 offset = input("Enter the day offset: ")
 # Convert to integer
