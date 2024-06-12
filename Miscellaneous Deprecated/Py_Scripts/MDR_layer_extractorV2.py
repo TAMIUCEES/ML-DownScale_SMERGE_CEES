@@ -60,18 +60,18 @@ md_files = []
 # Sets date formatting
 for d in date:
   g=0
-  date_n = pd.to_datetime(d, format = "%m%d%Y")
+  date_n = pd.to_datetime(d, format = "%m/%d/%Y")
   date_n = date_n + pd.DateOffset(months=lag)
   u_date_n = date_n + pd.DateOffset(days==offset)
   l_date_n = date_n - pd.DateOffset(days==offset)
   year = date_n.year
   if d_f == 'A':
     doy = date_n.timetuple().tm_yday
-    u_date_c = str(u_date_n.year)+str(u_date_n.timetupel().tm_yday).zfill(3)
-    l_date_c = str(l_date_n.year)+str(l_date_n.timetuple().tm_yday).zfill(3)
+    u_date_c = str(u_date_n.year) + str(u_date_n.timetupel().tm_yday).zfill(3)
+    l_date_c = str(l_date_n.year) + str(l_date_n.timetuple().tm_yday).zfill(3)
   if d_f =='B':
-    u_date_c = str(u_date_n.year)+str(u_date_n.month).zfill(2)+str(u_date_n.day).zfill(2)
-    l_date_c = str(l_date_n.year)+str(l_date_n.month).zfill(2)+str(l_date_n.day).zfill(2)
+    u_date_c = str(u_date_n.year) + str(u_date_n.month).zfill(2) + str(u_date_n.day).zfill(2)
+    l_date_c = str(l_date_n.year) + str(l_date_n.month).zfill(2) + str(l_date_n.day).zfill(2)
   for file in os.listdir(input_dir):
     if file.endswith(ftype):
       file_p = file.split(sep)
@@ -92,8 +92,8 @@ i=0
 for md_file in md_files:
   # Converts the data format to mmddYYYY
   date_in = pd.to_datetime(date[i], format="%m%d%Y")
-  doy_in = date_in.timetyple().tm_yday
-  output_file = os.path.join(output_dir, product + '_'+ str(date_in.year) + str(doy_in).zfill(3) + '.tif')
+  doy_in = date_in.timetuple().tm_yday
+  output_file = os.path.join(output_dir, product + '_' + str(date_in.year) + str(doy_in).zfill(3) + '.tif')
   if str(yer) in md_file:
     print(output_file)
     print(md_file)
