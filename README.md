@@ -23,8 +23,3 @@
   <img src="https://github.com/devicons/devicon/blob/master/icons/git/git-original-wordmark.svg" title="Git" **alt="Git" width="40" height="40"/>
 </div>
 
-$ wget https://github.com/ekalinin/github-markdown-toc.go/releases/download/1.1.0/gh-md-toc.linux.amd64.tgz
-$ tar xzvf gh-md-toc.linux.amd64.tgz
-gh-md-toc
-$ ./gh-md-toc --version
-1.1.0
