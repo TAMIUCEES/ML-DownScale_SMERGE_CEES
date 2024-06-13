@@ -34,9 +34,15 @@
   </ol>
 </details>
 
+## Table of Contents
+-
+-  [Mission Statement](#Mission-Statement)
+  - [Browser Support](#browser-support)
+  
 
+##  Mission Statement 
 
-
+- The mission of CEES is to facilitate education, research, and outreach in the earth and environmental studies across the TAMIU service area. CEES also takes pride in supporting diverse research endeavors across the TAMIU campus. This brief guide outlines the OS library and the ArcPy package employed in the environment used. The goal is to make interpreting raster, files, etc, as beginner-friendly as possible. 
 
 
 
