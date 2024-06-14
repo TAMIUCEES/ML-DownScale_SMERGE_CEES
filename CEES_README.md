@@ -27,10 +27,10 @@
     </li>
     <li><a href="#usage">Usage</a></li>
     <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#acrpy_scripts:">Acrpy Scripts</a></li>
-    <li><a href="#dataset_syntesis:">Dataset syntesis</a></li>
-    <li><a href="#machine-Learning :">Machine-Learning</a></li>
-    <li><a href="#miscellaneous_deprecated :">Miscellaneous Deprecated</a></li>
+    <li><a href="#acrpy-scripts">Acrpy Scripts</a></li>
+    <li><a href="#dataset-syntesis">Dataset syntesis</a></li>
+    <li><a href="#machine-Learning">Machine-Learning</a></li>
+    <li><a href="#miscellaneous-deprecated">Miscellaneous Deprecated</a></li>
        </ul>
     </li>
     <li><a href="#contributing">Contributing</a></li>
