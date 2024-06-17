@@ -64,7 +64,7 @@ To update TOC, please run:
 
 ### Mission Statement 
 
->  The mission of CEES is to facilitate education, research, and outreach in the earth and environmental studies across the TAMIU service area. CEES also takes pride in supporting diverse research endeavors across the TAMIU campus. This brief guide outlines the OS library and the ArcPy package employed in the environment used. The goal is to make interpreting raster, files, etc, as beginner-friendly as possible. UPDATE: This beginner-friendly guide aims to simplify the understanding of raster, files, and other related concepts by utilizing the OS library and ArcPy package in the operating environment.
+>  The mission of CEES is to facilitate education, research, and outreach in the earth and environmental studies across the TAMIU service area. CEES also takes pride in supporting diverse research endeavors across the TAMIU campus. This brief guide outlines the OS library and the ArcPy package employed in the environment used. The goal is to make interpreting raster, files, etc, as beginner-friendly as possible. UPDATE(last 2 sentences): This beginner-friendly guide aims to simplify the understanding of raster, files, and other related concepts by utilizing the OS library and ArcPy package in the operating environment.
 
 :arrow_right: *[https://www.tamiu.edu/cees/](https://www.tamiu.edu/cees/)*
 
