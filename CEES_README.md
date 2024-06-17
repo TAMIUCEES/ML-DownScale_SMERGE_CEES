@@ -4,13 +4,14 @@
 
 <a name="readme-top"></a>
 <div id="header" align="center">
-  <img src="https://media.giphy.com/media/M9gbBd9nbDrOTu1Mqx/giphy.gif" width="100"/>
+
+  <img src="https://github.com/Anmol-Baranwal/Cool-GIFs-For-GitHub/assets/74038190/80728820-e06b-4f96-9c9e-9df46f0cc0a5" width="600">
+<br><br>
 </div>
 
 
-<div id="header" align="center">
-  <img src="https://github.com/TAMIUCEES/ML-DownScale_SMERGE_CEES/assets/166143344/30e6a11e-0451-4d2d-bc8f-9acb53494091.image.svg" title="ceeslogo" alt="ceeslogo"  align ="center" width="128" height="128"/>&nbsp;
-</div>
+
+
 
 <!-- TABLE OF CONTENTS -->
 <details>
@@ -64,6 +65,13 @@ To update TOC, please run:
 ### Mission Statement 
 
 >  The mission of CEES is to facilitate education, research, and outreach in the earth and environmental studies across the TAMIU service area. CEES also takes pride in supporting diverse research endeavors across the TAMIU campus. This brief guide outlines the OS library and the ArcPy package employed in the environment used. The goal is to make interpreting raster, files, etc, as beginner-friendly as possible. 
+
+
+<div id="header" align="center">
+  <img src="https://github.com/TAMIUCEES/ML-DownScale_SMERGE_CEES/assets/166143344/30e6a11e-0451-4d2d-bc8f-9acb53494091.image.svg" title="ceeslogo" alt="ceeslogo"  align ="center" width="128" height="128"/>&nbsp;
+</div>
+
+
 
 ## Explanation of structure 
 > By entering the main branch in Github, the user will have access to the files. The user can start with the file folder. 
