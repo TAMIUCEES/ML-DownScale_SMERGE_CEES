@@ -81,7 +81,7 @@ To update TOC, please run:
 The CEES  database repository is a tool for Python and ArcGIS. This tool can help the user re-sample raster images.
 Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated
 
-> UPDATED PRETTY: The user can start with the first file folder, **ArcPy_Scripts. There are four distinct folders in total. After the **ArcPy_Scripts** folder, users will proceed to the **Dataset_Synthesis** folder, followed by the **Machine_Learning** folder, and lastly, the **Miscellaneous_Deprecated** folder. Each folder consists of subfolders that contain notebooks and scripts equipped with a range of tools. These tools are designed to assist in organizing and presenting pertinent data efficiently, enabling users to access and manipulate information more effectively. This enhanced productivity and predictive capabilities contribute to improved overall performance and accuracy.
+> UPDATED PRETTY: The user can start with the first file folder, **ArcPy_Scripts**. There are four distinct folders in total. After the **ArcPy_Scripts** folder, users will proceed to the **Dataset_Synthesis** folder, followed by the **Machine_Learning** folder, and lastly, the **Miscellaneous_Deprecated** folder. Each folder consists of subfolders that contain notebooks and scripts equipped with a range of tools. These tools are designed to assist in organizing and presenting pertinent data efficiently, enabling users to access and manipulate information more effectively. This enhanced productivity and predictive capabilities contribute to improved overall performance and accuracy.
 
 ---
 ---
