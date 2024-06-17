@@ -189,7 +189,7 @@ Pandas are extensively used throughout the notebooks.
 >   *  The Aggregate_multipoints script summarizes point features, allowing these points to create an area and are used to calculate statistics. 
 
 > * MDR_Layer_ExtractorV2:
->   *  The MDR_layer_extractorV2 program utilizes the function to extract subsets from multiple multidimensional raster datasets by saving the datasets to a designed directory.
+>   *  The MDR_layer_extractorV2 program utilizes the function to extract subsets from multiple multidimensional raster datasets by saving the datasets to a designated directory.
 
 
 > * Auto_Multipoint_Extractor:
