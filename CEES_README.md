@@ -110,10 +110,10 @@ Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated
 >      *  This program is designed to combine multiple multidimensional raster datasets into a single, cohesive raster dataset.
 
 > * *multiBand_raster_extractor*: 
->      *  This program, utilizing user inputs, generates a new file containing the band numbers that comprise a raster.                                             
-                  
+>      *  The program is equipped with efficient band extraction and reordering capabilities, enabling the extraction of one or more bands or reorganizing the bands into a multiband raster layer effectively.     
+                
 > * *netCDF_layer_extractor*:
->      *  This program leverages the find_files function to identify files and construct new file paths, allowing users to modify file names for each path.
+>      *  This program utilizes the **find_files** function to identify files and construct new file paths, allowing users to generate new files and perform data resampling.
 
 > * *raster_merge*:
 >      *   This program enables users to merge multiple raster files, consolidating diverse datasets into a single comprehensive raster.
