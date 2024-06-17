@@ -99,25 +99,26 @@ Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated
 >  *  **Note:** To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step. 
 
 > * Libraries used:
->     *  The programs will use the OS library and ArcPy package consistently. This guide will explain the structure of the directories and serve as a step-by-step guide to using the libraries. 
+>     *  The programs will use the OS library and ArcPy package consistently. This guide will explain the structure of the directories and serve as a step-by-step guide to using the libraries.
+>     *  UPDATED: This guide will provide a comprehensive explanation of the directory structure and offer a step-by-step guide to utilizing the **os** library and **ArcPy** packages. The programs will consistently employ the libraries to ensure cohesion.
 ---
 
 > * *auto_multiD_subsetting*:
->      *  Similar to the auto_zonal_stats program, it facilitates efficient data retrieval and processing by subsetting and resampling raster data layer-by-layer.
+>      *  The program facilitates efficient data retrieval and raster processing by subsetting and resampling raster data on an individual layer basis.
 
-> * MultiD_Raster_Merge:
+> * *multiD_raster_merge*:
 >      *  This program is designed to combine multiple multidimensional raster datasets into a single, cohesive raster dataset.
 
-> * MultiBand_Raster_Extractor: 
+> * *multiBand_raster_extractor*: 
 >      *  This program, utilizing user inputs, generates a new file containing the band numbers that comprise a raster.                                             
                   
-> * NetCDF_Layer_Extractor:
+> * *netCDF_layer_extractor*:
 >      *  This program leverages the find_files function to identify files and construct new file paths, allowing users to modify file names for each path.
 
-> * Raster_Merge:
+> * *raster_merge*:
 >      *   This program enables users to merge multiple raster files, consolidating diverse datasets into a single comprehensive raster.
 
-> * Auto_Zonal_Stats:
+> * *auto_zonal_stats*:
 >      *  This program allows users to resample files, enabling raster file size conversion. 
 
 > Additional:
