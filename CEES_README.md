@@ -88,14 +88,21 @@ Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated
 
 ###   Acrpy Scripts 
 
-> * Notebooks and Py_scipts included: auto_multiD_subsetting, multiD_rasters_merge, MultiBand_Raster_Extractor,  netCDF_Layer_extractor,  raster_merge, auto_zonal_stats, and zonal_statistics.
->  *   Below are the contents listed in the user's recommended order. 
+> * **Included Notebooks and Python Scripts:**
+>     * MDR_layer_extractor_v1,
+>     * auto_multiD_subsetting,
+>     * auto_zonal_stats,
+>     * multiBand_raster_extractor,
+>     * multiD_raster_merge,
+>     * netCDF_layer_extractor,
+>     * raster_merge
+>  *  **Note:** To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step. 
 
 > * Libraries used:
 >     *  The programs will use the OS library and ArcPy package consistently. This guide will explain the structure of the directories and serve as a step-by-step guide to using the libraries. 
 ---
 
-> * Auto_multiD_subsetting:
+> * *auto_multiD_subsetting*:
 >      *  Similar to the auto_zonal_stats program, it facilitates efficient data retrieval and processing by subsetting and resampling raster data layer-by-layer.
 
 > * MultiD_Raster_Merge:
@@ -113,8 +120,9 @@ Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated
 > * Auto_Zonal_Stats:
 >      *  This program allows users to resample files, enabling raster file size conversion. 
 
-> *  The Zonal Statistics:
->       *  This program calculates statistics on raster values within zones of another dataset.
+> Additional:
+> *  *MDR_layer_extractor_v1*:
+>       *  Through data slicing along specific variables and dimensions, the program extracts subsets from numerous multidimensional raster datasets, enabling the generation of a multidimensional raster layer from a given dataset.
 
 --- 
 ---
