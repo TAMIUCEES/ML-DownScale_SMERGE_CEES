@@ -79,7 +79,8 @@ To update TOC, please run:
 ## Explanation of structure 
 > By entering the main branch in Github, the user will have access to the files. The user can start with the file folder. 
 The CEES  database repository is a tool for Python and ArcGIS. This tool can help the user re-sample raster images.
-Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated 
+Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated
+> UPDATED: By entering the main branch, TAMIUCEES, in GitHub, the user will have access to the files. The user can begin with the first file folder, ArcPy_Scripts. Each folder has subfolders that contain the notebooks and scripts with the different tools to ......
 
 ---
 
