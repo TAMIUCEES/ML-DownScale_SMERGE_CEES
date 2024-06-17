@@ -66,10 +66,13 @@ To update TOC, please run:
 
 >  The mission of CEES is to facilitate education, research, and outreach in the earth and environmental studies across the TAMIU service area. CEES also takes pride in supporting diverse research endeavors across the TAMIU campus. This brief guide outlines the OS library and the ArcPy package employed in the environment used. The goal is to make interpreting raster, files, etc, as beginner-friendly as possible. 
 
+:arrow_right: *[https://www.tamiu.edu/cees/](https://www.tamiu.edu/cees/)*
+
 
 <div id="header" align="center">
-  <img src="https://github.com/TAMIUCEES/ML-DownScale_SMERGE_CEES/assets/166143344/30e6a11e-0451-4d2d-bc8f-9acb53494091.image.svg" title="ceeslogo" alt="ceeslogo"  align ="center" width="128" height="128"/>&nbsp;
+  <img src="https://github.com/TAMIUCEES/ML-DownScale_SMERGE_CEES/assets/166143344/30e6a11e-0451-4d2d-bc8f-9acb53494091.image.svg" title="ceeslogo" alt="ceeslogo"  align ="center" width="140" height="140"/>&nbsp;
 </div>
+
 
 
 
@@ -168,7 +171,7 @@ Pandas are extensively used throughout the notebooks.
 > * Notebooks and py_scripts included:  aggregate_multipoints , MDR_layer_extractorV2 , and auto_multipoint_extractor.
 > * Note: Miscellaneous ArcPy that is not being used but can be helpful to the user.
 
-:arrow_right: *[https://keepachangelog.com](https://keepachangelog.com)*
+
 
 * Aggregate_multipoints:
    *  The Aggregate_multipoints script summarizes point features, allowing these points to create an area and are used to calculate statistics. 
