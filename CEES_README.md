@@ -10,9 +10,6 @@
 </div>
 
 
-
-
-
 <!-- TABLE OF CONTENTS -->
 <details>
   <summary>Table of Contents</summary>
@@ -30,16 +27,11 @@
         <li><a href="#installation">Installation</a></li>
       </ul>
     </li>
-    <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
     <li><a href="#acrpy-scripts">Acrpy Scripts</a></li>
     <li><a href="#dataset-syntesis">Dataset syntesis</a></li>
     <li><a href="#machine-learning">Machine-Learning</a>
     <li><a href="#miscellaneous-deprecated">Miscellaneous Deprecated</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
-    <li><a href="#contact">Contact</a></li>
-    <li><a href="#acknowledgments">Acknowledgments</a></li>
+    
   </ol>
 </details>
 
