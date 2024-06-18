@@ -103,7 +103,8 @@ To update TOC, please run:
 >     * inst_post_process
 >     * primary_dataset_gen
 >     * static_var_gen
- > * These notebooks serve a specific purpose by organizing and presenting relevant data sequentially, enabling readers to access and manipulate the necessary information easily.
+
+ > * These notebooks are designed to arrange and display pertinent data methodically. By doing so, users can access and manage the required information. 
 
  > [!NOTE]
 >  * In the notebook sequence, the *dataset_breakdown* and *static_var_gen* notebooks can be used interchangeably and should come before all other notebooks. After these two notebooks, the *primary_dataset* notebook can be used. Finally, the *inst_post_process* notebook is optional, but if used, it should be placed at the end of the sequence.
