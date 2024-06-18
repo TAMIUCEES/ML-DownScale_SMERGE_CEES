@@ -65,11 +65,11 @@ To update TOC, please run:
 >     * netCDF_layer_extractor
 >     * raster_merge
 
-> [!NOTE]
-> * To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step.
-
 > * Libraries used:
 >     *  This guide will provide a comprehensive explanation of the directory structure and offer a step-by-step guide to utilizing the **os** library and **ArcPy** packages. The programs will consistently employ the libraries to ensure cohesion.
+
+>  [!NOTE]
+> * To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step.
 ---
 
 > * *auto_multiD_subsetting*:
@@ -128,23 +128,29 @@ To update TOC, please run:
 ---
 ## Machine-Learning
 
-> * Notebooks and py_scripts included : GBR_w_verifer, GBR_ wout_verifier, RF, XGB_w_verifier , and XGB_wout_verifier.
-> * The purpose of these notebooks is for the user to reference machine-learning techniques to build and use a series of decision trees for better prediction. 
+> * **Included Notebooks and Python Scripts:**
+>     *  GBR_w_verifer
+>     *  GBR_wout_verifier
+>     *  RF
+>     *  XGB_w_verifier
+>     *  XGB_wout_verifier
+
+> * These notebooks aim to provide users with a reference to machine-learning techniques, specifically guiding them through the process of constructing and utilizing multiple decision trees. The ultimate objective is to enhance the accuracy and overall predictive capabilities of the constructed models.
 
 ---
 
-> * GBR_w_verifer: 
->    *   This machine learning technique is a machine learning algorithm that uses a series of decision trees to make predictions. 
+> * *GBR_w_verifer*: 
+>    *   The Gradient Boosting Regressor with verifier is a machine learning algorithm that employs a sequence of decision trees to perform predictions.
 
 > * GBR_wout_verifier: 
->    *   This machine-learning technique will be used without the verifier. This machine-learning algorithm uses a series of decision trees to make predictions. 
+>    *   This machine-learning technique will be used without a verifier. This machine-learning algorithm uses a series of decision trees to make predictions, each prediction is trained to correct the errors of previous trees which results in an accurate overall prediction.
 
 > * RF:
 >    *   The machine learning technique Random forest (RF) is a machine learning algorithm that generates a single prediction by collecting the output of multiple decision trees. 
 >        * Disclaimer: Random Forest(RF ) ONLY runs with Linux.
 
 > * XGB_w_verifier:  
->    *   This machine learning technique uses eXtreme Gradients boost (XGBoost) with a verifier. This machine learning algorithm builds a series of trees one after another while excelling in predictive accuracy. 
+>    *   This machine learning algorithm uses eXtreme Gradient Boost (XGBoost) with a verifier. This machine learning algorithm builds a series of trees one after another while excelling in predictive accuracy. 
 
 > * XGB_wout_verifier:
 >   *  This machine learning technique uses eXtreme Gradients boost (XGBoost) without a verifier.
