@@ -9,30 +9,6 @@
 <br><br>
 </div>
 
-
-<!-- TABLE OF CONTENTS -->
-<details>
-  <summary>Table of Contents</summary>
-  <ol>
-    <li>
-      <a href="#mission-statement">Mission Statement</a>
-      <ul>
-        <li><a href="#built-with">Built With</a></li>
-      </ul>
-    </li>
-    <li>
-      <a href="#getting-started">Getting Started</a>
-      <ul>
-        <li><a href="#prerequisites">Prerequisites</a></li>
-        <li><a href="#installation">Installation</a></li>
-      </ul>
-    </li>
-    <li><a href="#acrpy-scripts">Acrpy Scripts</a></li>
-    <li><a href="#dataset-synthesis">Dataset Synthesis</a></li>
-    <li><a href="#machine-learning">Machine-Learning</a>
-    <li><a href="#miscellaneous-deprecated">Miscellaneous Deprecated</a></li>
-    
-  </ol>
 </details>
 
 <!--
