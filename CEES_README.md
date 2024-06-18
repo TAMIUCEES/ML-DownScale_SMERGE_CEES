@@ -187,9 +187,7 @@ To update TOC, please run:
 
 ###  Requirements txt
 > [!NOTE]
-> OG: Users may need to modify the '*requirements.txt*' file in accordance to their Linux version. The version used to create the uploaded *requirements.txt* file is Ubuntu 24.04 LTS.
-> UPDATE 1: For users of different Linux versions, it may be necessary to make modifications to the '*requirements.txt*' file. This file was originally generated using Ubuntu 24.04 LTS.
-> UPDATE 2: Users may need to modify the '*requirements.txt*' file according to their specific Linux version. The file was created using Ubuntu 24.04 LTS and users with different versions may need to make adjustments to ensure compatibility.
+> Users may need to modify the '*requirements.txt*' file according to their specific Linux version. The file was created using Ubuntu 24.04 LTS and users with different versions may need to make adjustments to ensure compatibility.
 
 
 
