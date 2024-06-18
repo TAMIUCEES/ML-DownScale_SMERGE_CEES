@@ -99,7 +99,11 @@ To update TOC, please run:
 ---
 ### Dataset Synthesis 
 
- > * Notebooks and Py_scipts: include the dataset_breakdown, inst_post_process, primary_dataset_gen, static_var_gen. 
+> * **Included Notebooks and Python Scripts:**
+>     * dataset_breakdown
+>     * inst_post_process
+>     * primary_dataset_gen
+>     * static_var_gen
  > * These notebooks serve a specific purpose by organizing and presenting relevant data sequentially, enabling readers to access and manipulate the necessary information easily.
 
  > *  The notebook order should be as follows: dataset_breakdown, static_var_gen (interchangeable), and primary_dataset_genV2. Lastly, the inst_post_process is optional. 
