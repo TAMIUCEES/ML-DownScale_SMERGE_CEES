@@ -126,7 +126,7 @@ To update TOC, please run:
 
 ---
 ---
-## Machine-Learning
+## Machine Learning
 
 > * **Included Notebooks and Python Scripts:**
 >     *  GBR_w_verifer
