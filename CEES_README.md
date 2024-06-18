@@ -28,7 +28,7 @@
       </ul>
     </li>
     <li><a href="#acrpy-scripts">Acrpy Scripts</a></li>
-    <li><a href="#dataset-syntesis">Dataset syntesis</a></li>
+    <li><a href="#dataset-synthesis">Dataset Synthesis</a></li>
     <li><a href="#machine-learning">Machine-Learning</a>
     <li><a href="#miscellaneous-deprecated">Miscellaneous Deprecated</a></li>
     
@@ -47,7 +47,7 @@ To update TOC, please run:
   - [Mission Statement](#mission-statement)
     - [Explanation of Structure](#explanation-of-structure)
   - [Acrpy Scripts](#acrpy-scripts)
-  - [Dataset Syntesis](#dataset-syntesis)
+  - [Dataset Synthesis](#dataset-synthesis)
   - [Machine-Learning](#machine-learning)
   - [Miscellaneous Deprecated](#miscellaneous-deprecated)
     
