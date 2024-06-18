@@ -24,7 +24,7 @@ To update TOC, please run:
     - [Explanation of Structure](#explanation-of-structure)
   - [Acrpy Scripts](#acrpy-scripts)
   - [Dataset Synthesis](#dataset-synthesis)
-  - [Machine-Learning](#machine-learning)
+  - [Machine Learning](#machine-learning)
   - [Miscellaneous Deprecated](#miscellaneous-deprecated)
   - [Requirements txt](#requirements-txt)
     
