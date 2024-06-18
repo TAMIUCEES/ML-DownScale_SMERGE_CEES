@@ -137,43 +137,48 @@ To update TOC, please run:
 
 > * These notebooks aim to provide users with a reference to machine-learning techniques, specifically guiding them through the process of constructing and utilizing multiple decision trees. The ultimate objective is to enhance the accuracy and overall predictive capabilities of the constructed models.
 
+> [!IMPORTANT]
+> Random Forest ONLY runs with Linux.
 ---
 
-> * *GBR_w_verifer*: 
+> * *GBR_w_verifier*: 
 >    *   The Gradient Boosting Regressor with verifier is a machine learning algorithm that employs a sequence of decision trees to perform predictions.
 
-> * GBR_wout_verifier: 
->    *   This machine-learning technique will be used without a verifier. This machine-learning algorithm uses a series of decision trees to make predictions, each prediction is trained to correct the errors of previous trees which results in an accurate overall prediction.
+> * *GBR_wout_verifier*: 
+>    *   The machine learning algorithm, which employs a sequence of decision trees to forecast, will operate without a verifier. Each decision tree is trained to correct the faults of the previous trees, resulting in a highly accurate overall prediction.
 
-> * RF:
->    *   The machine learning technique Random forest (RF) is a machine learning algorithm that generates a single prediction by collecting the output of multiple decision trees. 
->        * Disclaimer: Random Forest(RF ) ONLY runs with Linux.
+> * *RF*:
+>    *   Random forest is a machine learning algorithm that generates a single prediction by collecting the output of multiple decision trees.
 
 > * XGB_w_verifier:  
->    *   This machine learning algorithm uses eXtreme Gradient Boost (XGBoost) with a verifier. This machine learning algorithm builds a series of trees one after another while excelling in predictive accuracy. 
+>    *   The eXtreme Gradient Boost with verifier constructs a sequence of decision trees iteratively, each tree contributing to the overall predictive performance.
 
 > * XGB_wout_verifier:
->   *  This machine learning technique uses eXtreme Gradients boost (XGBoost) without a verifier.
->   *   Like the XGB_w_verifier, this machine learning algorithm builds a series of trees one after another while excelling in predictive accuracy.
+>   *   eXtreme Gradient Boost is a machine learning algorithm that operates without a verifier. XGBoost functions by constructing a series of trees sequentially, where every subsequent tree learns from the errors of its predecessor. This process continues until a point of maximal improvement is reached, resulting in a robust and accurate regression model.
 
 ---
 ***
 ### Miscellaneous Deprecated 
 
-> * Notebooks and py_scripts included:  aggregate_multipoints, MDR_layer_extractorV2, and auto_multipoint_extractor.
-> * **Note:** Miscellaneous ArcPy notebooks that are not being used but can be helpful to the user.
+> * **Included Notebooks and Python Scripts:**
+>     *   Aggregate_MultiPoints
+>     *   MDR_layer_extractorV2
+>     *   auto_multipoint_extractor
+
+> [!NOTE]
+> This folder contains a collection of assorted ArcPy notebooks that, while not currently utilized, possess the potential to serve as valuable resources for the user.
 
 ---
 
-> * Aggregate_Multipoints:
->   *  The Aggregate_multipoints script summarizes point features, allowing these points to create an area and are used to calculate statistics. 
+> * *Aggregate_Multipoints*:
+>   *  The aggregate_multipoints program enables the summarization of point features, facilitating the creation of an area from these points. This area is then utilized to compute statistical data.
 
-> * MDR_Layer_ExtractorV2:
+> * *MDR_layer_extractorV2*:
 >   *  The MDR_layer_extractorV2 program utilizes the function to extract subsets from multiple multidimensional raster datasets by saving the datasets to a designated directory.
 
 
-> * Auto_Multipoint_Extractor:
->    *  Auto_multipoint_extractor program allows users to extract multiple points automatically by modifying the input point features. 
+> * *auto_multipoint_extractor*:
+>    *  The auto_multipoint_extractor program allows users to extract multiple points automatically by modifying the input point features. 
 
 
 
@@ -181,9 +186,10 @@ To update TOC, please run:
 ---
 
 ###  Requirements txt Note
-
-ghggjjgjgjjgjjg
-
+> [!NOTE]
+> OG: Users may need to modify the '*requirements.txt*' file in accordance to their Linux version. The version used to create the uploaded *requirements.txt* file is Ubuntu 24.04 LTS.
+> UPDATE 1: For users of different Linux versions, it may be necessary to make modifications to the '*requirements.txt*' file. This file was originally generated using Ubuntu 24.04 LTS.
+> UPDATE 2: Users may need to modify the '*requirements.txt*' file according to their specific Linux version. The file was created using Ubuntu 24.04 LTS and users with different versions may need to make adjustments to ensure compatibility.
 
 
 
