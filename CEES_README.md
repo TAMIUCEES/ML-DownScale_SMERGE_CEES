@@ -69,7 +69,6 @@ To update TOC, please run:
 > * To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step.
 
 > * Libraries used:
->     *  The programs will use the OS library and ArcPy package consistently. This guide will explain the structure of the directories and serve as a step-by-step guide to using the libraries.
 >     *  This guide will provide a comprehensive explanation of the directory structure and offer a step-by-step guide to utilizing the **os** library and **ArcPy** packages. The programs will consistently employ the libraries to ensure cohesion.
 ---
 
