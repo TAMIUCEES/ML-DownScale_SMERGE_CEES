@@ -26,7 +26,7 @@ To update TOC, please run:
   - [Dataset Synthesis](#dataset-synthesis)
   - [Machine-Learning](#machine-learning)
   - [Miscellaneous Deprecated](#miscellaneous-deprecated)
-  - [Requirements txt Note](#requirements-txt-note)
+  - [Requirements txt](#requirements-txt)
     
 <!--te-->
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -185,7 +185,7 @@ To update TOC, please run:
 ---
 ---
 
-###  Requirements txt Note
+###  Requirements txt
 > [!NOTE]
 > OG: Users may need to modify the '*requirements.txt*' file in accordance to their Linux version. The version used to create the uploaded *requirements.txt* file is Ubuntu 24.04 LTS.
 > UPDATE 1: For users of different Linux versions, it may be necessary to make modifications to the '*requirements.txt*' file. This file was originally generated using Ubuntu 24.04 LTS.
