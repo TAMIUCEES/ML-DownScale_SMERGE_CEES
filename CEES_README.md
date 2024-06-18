@@ -68,9 +68,11 @@ To update TOC, please run:
 
 
 
-## Explanation of structure 
+## Explanation of Structure 
 
-> The user can start with the first file folder, **ArcPy_Scripts**. There are four distinct folders in total. After the **ArcPy_Scripts** folder, users will proceed to the **Dataset_Synthesis** folder, followed by the **Machine_Learning** folder, and lastly, the **Miscellaneous_Deprecated** folder. Each folder consists of subfolders that contain notebooks and scripts equipped with a range of tools. These tools are designed to assist in organizing and presenting pertinent data efficiently, enabling users to access and manipulate information more effectively. This enhanced productivity and predictive capabilities contribute to improved overall performance and accuracy.
+> * The user can start with the first file folder, **ArcPy_Scripts**.
+> *  There are four distinct folders in total. After the **ArcPy_Scripts** folder, users will proceed to the **Dataset_Synthesis** folder, followed by the **Machine_Learning** folder, and lastly, the **Miscellaneous_Deprecated** folder.
+> *   Each folder consists of subfolders that contain notebooks and scripts equipped with a range of tools. These tools are designed to assist in organizing and presenting pertinent data efficiently, enabling users to access and manipulate information more effectively. This enhanced productivity and predictive capabilities contribute to improved overall performance and accuracy.
 
 ---
 ---
@@ -78,14 +80,16 @@ To update TOC, please run:
 ###   Acrpy Scripts 
 
 > * **Included Notebooks and Python Scripts:**
->     * MDR_layer_extractor_v1,
->     * auto_multiD_subsetting,
->     * auto_zonal_stats,
->     * multiBand_raster_extractor,
->     * multiD_raster_merge,
->     * netCDF_layer_extractor,
+>     * MDR_layer_extractor_v1
+>     * auto_multiD_subsetting
+>     * auto_zonal_stats
+>     * multiBand_raster_extractor
+>     * multiD_raster_merge
+>     * netCDF_layer_extractor
 >     * raster_merge
->  *  **Note:** To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step. 
+
+>  *  **Note:** To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step.
+
 > * Libraries used:
 >     *  The programs will use the OS library and ArcPy package consistently. This guide will explain the structure of the directories and serve as a step-by-step guide to using the libraries.
 >     *  This guide will provide a comprehensive explanation of the directory structure and offer a step-by-step guide to utilizing the **os** library and **ArcPy** packages. The programs will consistently employ the libraries to ensure cohesion.
