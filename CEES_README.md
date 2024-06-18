@@ -65,7 +65,8 @@ To update TOC, please run:
 >     * netCDF_layer_extractor
 >     * raster_merge
 
->  *  **Note:** To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step.
+> [!NOTE]
+> * To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step.
 
 > * Libraries used:
 >     *  The programs will use the OS library and ArcPy package consistently. This guide will explain the structure of the directories and serve as a step-by-step guide to using the libraries.
