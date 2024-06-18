@@ -105,24 +105,23 @@ To update TOC, please run:
 >     * static_var_gen
  > * These notebooks serve a specific purpose by organizing and presenting relevant data sequentially, enabling readers to access and manipulate the necessary information easily.
 
- > *  The notebook order should be as follows: dataset_breakdown, static_var_gen (interchangeable), and primary_dataset_genV2. Lastly, the inst_post_process is optional. 
+ > [!NOTE]
+>  * In the notebook sequence, the *dataset_breakdown* and *static_var_gen* notebooks can be used interchangeably and should come before all other notebooks. After these two notebooks, the *primary_dataset* notebook can be used. Finally, the *inst_post_process* notebook is optional, but if used, it should be placed at the end of the sequence.
 
- > *   **Note:** 
-Pandas are extensively used throughout the notebooks. 
 
 --- 
 
-> * Dataset_breakdown:
->    *  The program allows users to break down a CSV file or files based on input. 
+> * *dataset_breakdown*:
+>    *  The program gathers data from the user input in the form of a CSV file or files then breaks down the data in the file.
 
-> * Static _var_gen:
->    *  The program generated a new CSV file using static variables from the initial dataset.
+> * *static_var_gen*:
+>    *  The program generates a new CSV file using static variables from the initial dataset.
 
-> * Primary_dataset_gen:
+> * *primary_dataset_gen*:
 >    *  The program enhances prediction accuracy by generating, cleaning, and combining data from static and dynamic files.
 
-> * Inst_post_process:
->    *  The program organizes data from two files to obtain updated station and page names.
+> * *inst_post_process*:
+>    *  The program organizes data from two files to obtain updated station names and pagenames.
 
 ---
 ---
