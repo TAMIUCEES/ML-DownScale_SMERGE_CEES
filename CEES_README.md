@@ -69,11 +69,8 @@ To update TOC, please run:
 
 
 ## Explanation of structure 
-> By entering the main branch in Github, the user will have access to the files. The user can start with the file folder. 
-The CEES  database repository is a tool for Python and ArcGIS. This tool can help the user re-sample raster images.
-Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated
 
-> UPDATED: The user can start with the first file folder, **ArcPy_Scripts**. There are four distinct folders in total. After the **ArcPy_Scripts** folder, users will proceed to the **Dataset_Synthesis** folder, followed by the **Machine_Learning** folder, and lastly, the **Miscellaneous_Deprecated** folder. Each folder consists of subfolders that contain notebooks and scripts equipped with a range of tools. These tools are designed to assist in organizing and presenting pertinent data efficiently, enabling users to access and manipulate information more effectively. This enhanced productivity and predictive capabilities contribute to improved overall performance and accuracy.
+> The user can start with the first file folder, **ArcPy_Scripts**. There are four distinct folders in total. After the **ArcPy_Scripts** folder, users will proceed to the **Dataset_Synthesis** folder, followed by the **Machine_Learning** folder, and lastly, the **Miscellaneous_Deprecated** folder. Each folder consists of subfolders that contain notebooks and scripts equipped with a range of tools. These tools are designed to assist in organizing and presenting pertinent data efficiently, enabling users to access and manipulate information more effectively. This enhanced productivity and predictive capabilities contribute to improved overall performance and accuracy.
 
 ---
 ---
@@ -91,7 +88,7 @@ Steps: → arcpy → dataset → machine_learning→ Miscellaneous deprecated
 >  *  **Note:** To initiate the process, the *auto_multiD_subsetting* program should be utilized first. Subsequently, based on the user's requirements, any intermediate programs can be employed as needed. It is essential to finalize the process with the *auto_zonal_stats* program as the final step. 
 > * Libraries used:
 >     *  The programs will use the OS library and ArcPy package consistently. This guide will explain the structure of the directories and serve as a step-by-step guide to using the libraries.
->     *  UPDATED: This guide will provide a comprehensive explanation of the directory structure and offer a step-by-step guide to utilizing the **os** library and **ArcPy** packages. The programs will consistently employ the libraries to ensure cohesion.
+>     *  This guide will provide a comprehensive explanation of the directory structure and offer a step-by-step guide to utilizing the **os** library and **ArcPy** packages. The programs will consistently employ the libraries to ensure cohesion.
 ---
 
 > * *auto_multiD_subsetting*:
