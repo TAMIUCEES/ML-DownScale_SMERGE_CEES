@@ -8,7 +8,7 @@ Original file is located at
 
 # Introduction
 
-The **primary_dataset_genV2** program uses various functions to compile data needed for files. The **Data_gen** function generates the values needed for variables using the dates given in the file. When generating these values there is a need to clean up the data or polish it to make a concise and more accurate reading of the data. This is done by using the **data_clean** funcion. In the **static_gen** function it is used to find the current/recent data for the date and variables needed. The **combine_data** function updated the *static* dictionary.
+The **primary_dataset_gen** program uses various functions to compile data needed for files. The **Data_gen** function generates the values needed for variables using the dates given in the file. When generating these values there is a need to clean up the data or polish it to make a concise and more accurate reading of the data. This is done by using the **data_clean** funcion. In the **static_gen** function it is used to find the current/recent data for the date and variables needed. The **combine_data** function updated the *static* dictionary.
 
 ---
 
