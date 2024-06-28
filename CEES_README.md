@@ -22,7 +22,7 @@ To update TOC, please run:
   ## Table of Contents 
   - [Mission Statement](#mission-statement)
     - [Explanation of Structure](#explanation-of-structure)
-  - [Acrpy Scripts](#acrpy-scripts)
+  - [AcrPy Scripts](#acrpy-scripts)
   - [Dataset Synthesis](#dataset-synthesis)
   - [Machine Learning](#machine-learning)
   - [Miscellaneous Deprecated](#miscellaneous-deprecated)
@@ -54,7 +54,7 @@ To update TOC, please run:
 ---
 ---
 
-###   Acrpy Scripts 
+###   AcrPy Scripts 
 
 > * **Included Notebooks and Python Scripts:**
 >     * MDR_layer_extractor_v1
