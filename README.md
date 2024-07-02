@@ -27,7 +27,7 @@ To update TOC, please run:
   - [Machine Learning](#machine-learning)
   - [Miscellaneous Deprecated](#miscellaneous-deprecated)
   - [Requirements txt](#requirements-txt)
-  - [Link to Demo Files](#link-to-demo-files)
+  - [Demo Files](#demo-files)
     
 <!--te-->
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
@@ -190,7 +190,7 @@ To update TOC, please run:
 > [!NOTE]
 > Users may need to modify the '*requirements.txt*' file according to their specific Linux version. The file was created using Ubuntu 24.04 LTS and users with different versions may need to make adjustments to ensure compatibility.
 
-### Demo File
+### Demo Files
 > The demo files required for working with the notebooks, *primary_dataset_gen*, and *XGB_wout_verifier* can be found at the provided link.
 >   - https://dustytamiu-my.sharepoint.com/personal/aaron_sanchez_tamiu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Faaron%5Fsanchez%5Ftamiu%5Fedu%2FDocuments%2FGithub%5FStuff&ct=1719936717028&or=OWA%2DNT%2DMail&cid=9ece2fa8%2Dfefa%2Dc467%2D69ca%2D6a2861e1641e&ga=1&LOF=1 
 
