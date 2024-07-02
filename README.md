@@ -27,6 +27,7 @@ To update TOC, please run:
   - [Machine Learning](#machine-learning)
   - [Miscellaneous Deprecated](#miscellaneous-deprecated)
   - [Requirements txt](#requirements-txt)
+  - [Link to Demo Files](#link-to-demo-files)
     
 <!--te-->
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
