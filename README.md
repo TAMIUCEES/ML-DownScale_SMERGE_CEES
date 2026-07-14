@@ -26,9 +26,10 @@ To update TOC, please run:
   - [Dataset Synthesis](#dataset-synthesis)
   - [Machine Learning](#machine-learning)
   - [Miscellaneous Deprecated](#miscellaneous-deprecated)
+  - [Data Management](#data-management)  
   - [Requirements txt](#requirements-txt)
   - [Demo Files](#demo-files)
-    
+ 
 <!--te-->
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 
@@ -182,7 +183,19 @@ To update TOC, please run:
 >    *  The auto_multipoint_extractor program allows users to extract multiple points automatically by modifying the input point features. 
 
 
+---
+---
+***
+### Data Management
 
+> * **Included Notebooks and Python Scripts:**
+>     *   csv_combin2
+>     *   Post_statsV3-3_qa(3)
+>     *   Post_statsV3-3_qa-Copy2(1)
+>     *   rasterize
+
+
+---
 ---
 ---
 
