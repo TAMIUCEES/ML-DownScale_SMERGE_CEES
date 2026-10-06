@@ -10,11 +10,11 @@ gNATSGO is a gap-filled mosaic of SSURGO and STATSGO2 and uses the same table st
 
 ## Inputs
 
-Three sources are needed, all from the state gNATSGO geodatabase (for Oklahoma, `gNATSGO_OK.gdb`). Each table is trimmed to the fields below before any calculation.
+Three sources are needed, all from the gSSURGO or gNATSGO geodatabase (CONUS: `gSSURGO_CONUS_202210.gdb`, whose raster is `MapunitRaster_30m`; a state gNATSGO file such as `gNATSGO_OK.gdb` uses `MapunitRaster_10m`). Each table is trimmed to the fields below before any calculation.
 
 | Source | Provides | Fields kept |
 | --- | --- | --- |
-| MapunitRaster_10m | MUKEY for each 10 m cell | Raster value (MUKEY) |
+| MapunitRaster (30 m in gSSURGO CONUS, 10 m in gNATSGO) | MUKEY for each raster cell | Raster value (MUKEY) |
 | Component table | Composition % of each component in a map unit | OBJECTID, comppct_r, comppct_l, mukey, cokey |
 | Horizon (chorizon) table | Sand, silt and clay by depth layer | OBJECTID, hzname, hzdepb_r, hzthk_r, sandtotal_r, silttotal_r, claytotal_r, cokey, chkey |
 
@@ -71,13 +71,55 @@ The SoilTotal_6 check is the main quality control. Any MUKEY that does not total
 
 ## Step 4: Join to the raster
 
-Export the final MUKEY, TotalSand_5, TotalSilt_5 and TotalClay_5 columns as a table and join it to the MapunitRaster_10m on the MUKEY value in ArcGIS Pro. Then export one raster per texture class (sand, silt, clay). Check that the three rasters sum to about 100 in a sample of cells.
+Export the final MUKEY, TotalSand_5, TotalSilt_5 and TotalClay_5 columns as a table and join it to the MapunitRaster on the MUKEY value in ArcGIS Pro. Then export one raster per texture class (sand, silt, clay). Check that the three rasters sum to about 100 in a sample of cells.
 
 The soil rasters are then resampled or clipped to the model grid alongside the other predictors (elevation, slope, aspect, NDVI, albedo and LAI).
+
+## Data and scripts
+
+The source data and the Excel model are in the OneDrive folder [Soil_Texture_National_Calulation - OneDrive](https://dustytamiu-my.sharepoint.com/personal/aaron_sanchez_tamiu_edu/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Faaron%5Fsanchez%5Ftamiu%5Fedu%2FDocuments%2FSoil%5FTexture%5FNational%5FCalulation&ga=1). The folder name is spelled "Calulation" in OneDrive. The data covers all of CONUS.
+
+### OneDrive folder contents
+
+| Item | Contents |
+| --- | --- |
+| `gSSURGO_CONUS_202210.gdb` | National gSSURGO file geodatabase (October 2022 release, 419 items, about 92 GB). Holds the SSURGO tables and the `MapunitRaster_30m` raster, which carries the MUKEY for each 30 m cell. |
+| `US_Soil_Data.gdb` | Second file geodatabase (107 items). Contents not yet documented. |
+| `info` | ArcGIS workspace folder. It contains only `arc.dir`. |
+| `Read_Me.txt` | The written procedure for the Excel workflow, the 19 steps this document follows. |
+| `schema.ini` | Column types for `US_Horizon.csv`, written during the CSV export so the file reads in with the right types. |
+| `US_Horizon.csv`, `US_Horizon.csv.xml` | National horizon table exported from gSSURGO (3,472,414 rows, 172 columns, about 3.0 GB). Includes cokey, chkey, hzname, the depth fields (hzdept, hzdepb, hzthk) and the texture fields (sandtotal, silttotal, claytotal), each as `_l`, `_r` and `_h` values. The `.xml` file is the ArcGIS metadata for the export. |
+| `US_Componet.csv`, `US_Componet.csv.xml` | About 197 MB, 1,026,031 rows. Despite the name, it has the same 172 horizon columns as `US_Horizon.csv` (cokey and chkey, with no comppct_r or mukey), so it is not a component table. Check it before use. |
+| `Soil_Cal (version 1).xlsx` | The Excel workbook (304 MB) that holds the tables as a data model and calculates the Step 1 to Step 3 columns. |
+| `Soil_Cal_DataModel_Formulas.txt` | The calculated-column formulas from the data model. See the appendix. |
+| `Soil_Cal (version 1).vpax` | Export of the data model's structure (VertiPaq Analyzer). |
+| `US_SOILS_CAL.ppkx` | ArcGIS Pro project package (12.8 GB) for the national soil calculation. |
+
+### Working files in the SoilTest folder
+
+These files are not in the OneDrive folder. They hold the trimmed tables, the final outputs and the scripts.
+
+| File | Contents |
+| --- | --- |
+| `Soil_Cal_Final.csv` | Final table, one row per MUKEY with texture data (212,601 rows). Columns: mukey, SoilTotal_5, TotalSand_5, TotalSilt_5, TotalClay_5, SoilTotal_6. This is the table joined to the MapunitRaster in Step 4. |
+| `unique_mukey_values.csv` | The MUKEY table used in Step 3, with the same columns and one row for every MUKEY in the national table (316,114 rows). MUKEYs with no texture data have SoilTotal_5 = 0 and blank values. |
+| `Horizon_finalpro.csv` | Earlier output with a different column layout (mukey, mukey_2, Total, TotalSand_process_5, TotalSilt_process_5, TotalClay_process_5, SSC_Sum_3). Use `Soil_Cal_Final.csv` instead. |
+| `Soil_US_Horizon.csv` | Earlier national horizon export, about 3.7 GB, before trimming. |
+| `Soil_US_Horizon_Trim.csv` | Horizon table trimmed to the Step 1 fields (3,537,186 rows), plus the calculated columns Cal_1 to Cal_5, SandTotal_1, SiltTotal_1, ClayTotal_1 and SoilTotal. |
+| `Soil_US_Component.csv` | National component export, about 735 MB, before trimming. |
+| `Soil_US_Component_Trim.csv` | Component table trimmed to the Step 2 fields (1,118,055 rows), plus the calculated columns TotalSand_2 to SoilTotal_4 and Adjust_Comp. |
+| `soil_texture_v2.py` | pandas version of the whole calculation. Takes the trimmed horizon and component CSVs and writes a table with the same columns as `Soil_Cal_Final.csv`. `--mode excel` (default) repeats the spreadsheet logic including its quirks. `--mode clean` removes the exactly-40 cm and blank-thickness quirks. `--compare` diffs the result against an existing final table. |
+| `soil_texture.py` | Earlier version of the same script. `--legacy-40-bug` reproduces the spreadsheet's handling of horizons ending at exactly 40 cm. |
+| `How_Do_Soil/` | The original workflow, built before the national calculation: `Read_Me.txt`, the Excel versions of the horizon, component, mapunit and MapunitRaster tables, and small test areas in the subfolders `ARM`, `Gillespe` and `Zapata`. |
+
+```
+python soil_texture_v2.py Soil_US_Horizon_Trim.csv Soil_US_Component_Trim.csv out.csv --mode clean --compare Soil_Cal_Final.csv
+```
 
 ## Known issues
 
 - **Horizons ending at exactly 40 cm get zero weight.** Cal_3 requires `hzdepb_r > 40` and Cal_5 requires `hzdepb_r < 40`, so a horizon with `hzdepb_r = 40` is counted by neither. Changing Cal_5 to `hzdepb_r <= 40` fixes it. In the CONUS Horizon table, 7,480 of 3,537,186 rows (0.21%) have `hzdepb_r = 40`, and all of them are affected. The share is small nationally, but its effect on a given map unit depends on whether the dropped horizon was the only one in the top 40 cm.
+- **Blank thickness is read as 0.** Many horizon rows have a blank `hzthk_r`. The Excel logic treats a blank as 0, so such a horizon adds nothing, even if it lies in the top 40 cm. `soil_texture_v2.py --mode clean` avoids this by taking each horizon's top from the bottom of the horizon above it.
 - **Shallow profiles are rescaled, not extended.** A component with only 25 cm of data is normalized to 100 using those 25 cm, so its texture represents the shallow layers only.
 - **Components without data are dropped.** Water, rock outcrop and similar components have no sand value, so they are excluded and the remaining components are rescaled. Map units made up entirely of such components have no texture value.
 - **Representative values only.** The process uses the `_r` values and ignores the low and high ranges, so it carries no uncertainty estimate.
