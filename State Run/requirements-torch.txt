@@ -1,0 +1,15 @@
+# For the PyTorch scripts and the XGBoost script.
+# Install torch for your CUDA version first: https://pytorch.org/get-started/locally/
+numpy
+pandas
+pyarrow
+scipy
+scikit-learn
+tqdm
+dask[dataframe]
+matplotlib
+shap
+mpi4py          # build against the cluster's OpenMPI (module load first)
+torch
+xgboost
+optuna

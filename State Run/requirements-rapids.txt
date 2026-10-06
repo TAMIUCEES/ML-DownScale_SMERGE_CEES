@@ -1,0 +1,8 @@
+# For the cuML Random Forest script. Use a separate environment from the torch one.
+# Install RAPIDS (cudf, cuml, cupy) per https://docs.rapids.ai/install for your CUDA version.
+numpy
+pandas
+scipy
+scikit-learn
+shap
+mpi4py
